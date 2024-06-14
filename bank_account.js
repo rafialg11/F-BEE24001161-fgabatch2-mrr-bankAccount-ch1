@@ -2,7 +2,8 @@ let saldo = 0;
 
 function tambahSaldo(){
   let saldoTambah = window.prompt("Masukan Jumlah Saldo yang ingin ditambahkan: ") 
-  if (isNaN(saldoTambah)) {
+  console.log(saldoTambah)
+  if (isNaN(saldoTambah) || saldoTambah === "") {
     window.alert("Inputan harus berupa angka")   
     return 
   }
@@ -14,7 +15,8 @@ function tambahSaldo(){
 
 function kurangiSaldo(){
   let saldoKurang = window.prompt("Masukan Jumlah Saldo yang ingin diambil: ")  
-  if (isNaN(saldoKurang)) {
+  console.log(saldoKurang)
+  if (isNaN(saldoKurang) || saldoKurang === "") {
     window.alert("Inputan harus berupa angka") 
     return
   }
