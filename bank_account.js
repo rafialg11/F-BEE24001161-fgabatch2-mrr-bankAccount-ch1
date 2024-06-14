@@ -1,24 +1,24 @@
 let saldo = 0;
 
 function tambahSaldo(){
-  saldoTambah = window.prompt("Masukan Jumlah Saldo yang ingin ditambahkan: ")
+  let saldoTambah = window.prompt("Masukan Jumlah Saldo yang ingin ditambahkan: ") 
   if (isNaN(saldoTambah)) {
-    alert("Masukan bukan angka!");
-    return;
+    window.alert("Inputan harus berupa angka")   
+    return 
   }
-  saldoTambah = parseFloat(saldoTambah);
+  saldoTambah = parseFloat(saldoTambah);  
   saldo += saldoTambah;
   window.alert("Jumlah Saldo Anda Sekarang adalah " + saldo)
   document.getElementById("total").innerHTML = saldo
 }
 
 function kurangiSaldo(){
-  saldoKurang = window.prompt("Masukan Jumlah Saldo yang ingin diambil: ")
+  let saldoKurang = window.prompt("Masukan Jumlah Saldo yang ingin diambil: ")  
   if (isNaN(saldoKurang)) {
-    alert("Masukan bukan angka!");
-    return;
+    window.alert("Inputan harus berupa angka") 
+    return
   }
-  saldoKurang = parseFloat(saldoKurang);
+  saldoKurang = parseFloat(saldoKurang);  
   saldo -= saldoKurang;
   window.alert("Jumlah Saldo Anda Sekarang adalah " + saldo)
   document.getElementById("total").innerHTML = saldo
